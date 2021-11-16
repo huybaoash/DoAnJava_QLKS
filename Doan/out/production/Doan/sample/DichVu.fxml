@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anpTab" prefHeight="754.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DichVu">
+   <children>
+      <AnchorPane prefHeight="790.0" prefWidth="1112.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TabPane layoutY="2.0" prefHeight="630.0" prefWidth="1112.0" style="-fx-background-color: #880000;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+              <tabs>
+                <Tab text="Đồ Ăn">
+                     <content>
+                        <AnchorPane prefHeight="650.0" prefWidth="989.0">
+                           <children>
+                              <Label fx:id="lblName1" alignment="TOP_CENTER" layoutX="14.0" layoutY="9.0" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: #ffffff;" text="Cơm chiên dương châu" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV1" layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/comchienchantrau.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia2" layoutX="212.0" layoutY="166.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName2" alignment="TOP_CENTER" layoutX="212.0" layoutY="10.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Cơm chiên gà nấm" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV2" layoutX="208.0" layoutY="41.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/comchienganam.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia3" layoutX="407.0" layoutY="166.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName3" alignment="TOP_CENTER" layoutX="407.0" layoutY="11.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Hàu nướng mỡ hành" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV3" layoutX="403.0" layoutY="42.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/haunuong.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia4" layoutX="609.0" layoutY="166.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName4" alignment="TOP_CENTER" layoutX="609.0" layoutY="10.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Mì xào bò" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV4" layoutX="605.0" layoutY="41.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/mixaobo1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia5" layoutX="806.0" layoutY="166.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName5" alignment="TOP_CENTER" layoutX="806.0" layoutY="10.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Mực Nướng" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV5" layoutX="802.0" layoutY="41.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/munnuong.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia6" layoutX="10.0" layoutY="361.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName6" alignment="TOP_CENTER" layoutX="14.0" layoutY="207.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Tôm hùm hấp" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV6" layoutX="10.0" layoutY="238.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/tomhumhap.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia7" layoutX="212.0" layoutY="361.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName7" alignment="TOP_CENTER" layoutX="212.0" layoutY="206.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Thịt xông khói" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV7" layoutX="208.0" layoutY="237.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/tomxongkhoi.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <ComboBox fx:id="cbxSL1" layoutX="142.0" layoutY="166.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL2" layoutX="334.0" layoutY="166.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL3" layoutX="529.0" layoutY="167.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL4" layoutX="731.0" layoutY="167.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL5" layoutX="928.0" layoutY="166.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL6" layoutX="132.0" layoutY="362.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL7" layoutX="334.0" layoutY="362.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <TextField fx:id="txtGia1" layoutX="20.0" layoutY="166.0" prefHeight="26.0" prefWidth="122.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                <Tab text="Nước Uống">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="625.0" prefWidth="1002.0">
+                           <children>
+                              <TextField fx:id="txtGia18" layoutX="25.0" layoutY="542.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName18" alignment="TOP_CENTER" layoutX="25.0" layoutY="392.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Nước Cam" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV18" layoutX="22.0" layoutY="420.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/nuoccam.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia8" layoutX="22.0" layoutY="156.0" prefHeight="26.0" prefWidth="140.0" />
+                              <Label fx:id="lblName8" alignment="TOP_CENTER" layoutX="20.0" layoutY="6.0" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #ffffff;" text="Nước Suối" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV8" layoutX="17.0" layoutY="34.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="150.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/nuocsuoi.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia9" layoutX="225.0" layoutY="156.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName9" alignment="TOP_CENTER" layoutX="220.0" layoutY="6.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Pepsi" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV9" layoutX="217.0" layoutY="34.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/pessi.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia10" layoutX="418.0" layoutY="156.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName10" alignment="TOP_CENTER" layoutX="413.0" layoutY="6.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Red Bull" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV10" layoutX="410.0" layoutY="34.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/redbull.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia11" layoutX="634.0" layoutY="157.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName11" alignment="TOP_CENTER" layoutX="629.0" layoutY="7.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Cocacola" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV11" layoutX="626.0" layoutY="35.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/coca.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia12" layoutX="835.0" layoutY="155.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName12" alignment="TOP_CENTER" layoutX="832.0" layoutY="5.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Bia Sài Gòn" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV12" layoutX="829.0" layoutY="33.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="120.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/biasaigon.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia13" layoutX="25.0" layoutY="353.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName13" alignment="TOP_CENTER" layoutX="20.0" layoutY="203.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Bia 333" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV13" layoutX="17.0" layoutY="231.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/bia333.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia14" layoutX="228.0" layoutY="353.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName14" alignment="TOP_CENTER" layoutX="223.0" layoutY="203.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Bia Tigher" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV14" layoutX="220.0" layoutY="231.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/biatiger.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia15" layoutX="426.0" layoutY="353.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName15" alignment="TOP_CENTER" layoutX="421.0" layoutY="203.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Bia Heineken" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV15" layoutX="418.0" layoutY="231.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/biaheni.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia16" layoutX="623.0" layoutY="353.0" prefHeight="26.0" prefWidth="127.0" />
+                              <Label fx:id="lblName16" alignment="TOP_CENTER" layoutX="619.0" layoutY="203.0" prefHeight="26.0" prefWidth="181.0" style="-fx-background-color: #ffffff;" text="Rượu Robert Mondavi" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV16" layoutX="615.0" layoutY="231.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/robert.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="txtGia17" layoutX="850.0" layoutY="349.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName17" alignment="TOP_CENTER" layoutX="846.0" layoutY="201.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Rượu Chile" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV17" layoutX="843.0" layoutY="229.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="118.0" prefWidth="166.0">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/ruoichile.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <ComboBox fx:id="cbxSL18" layoutX="147.0" layoutY="543.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL8" layoutX="163.0" layoutY="157.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL9" layoutX="342.0" layoutY="157.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL10" layoutX="540.0" layoutY="157.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL11" layoutX="756.0" layoutY="158.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL12" layoutX="957.0" layoutY="156.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL13" layoutX="145.0" layoutY="354.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL14" layoutX="350.0" layoutY="354.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL15" layoutX="548.0" layoutY="354.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL16" layoutX="748.0" layoutY="354.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                              <ComboBox fx:id="cbxSL17" layoutX="972.0" layoutY="350.0" onAction="#PresschooseNumber" prefHeight="25.0" prefWidth="48.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Sức Khỏe">
+                     <content>
+                        <AnchorPane prefHeight="715.0" prefWidth="1219.0">
+                           <children>
+                              <TextField fx:id="txtGia19" layoutX="33.0" layoutY="221.0" prefHeight="26.0" prefWidth="122.0" />
+                              <Label fx:id="lblName19" alignment="TOP_CENTER" layoutX="82.0" layoutY="14.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #ffffff;" text="Mát - xa" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnDV19" layoutX="10.0" layoutY="44.0" mnemonicParsing="false" onAction="#PressServices" prefHeight="167.0" prefWidth="304.0">
+                                 <graphic>
+                                    <ImageView fitHeight="156.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/sample/hinhdichvu/maxssa.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <ComboBox fx:id="cbxSL19" layoutX="155.0" layoutY="220.0" onAction="#PresschooseNumber" prefHeight="29.0" prefWidth="57.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <AnchorPane layoutX="5.0" layoutY="638.0" prefHeight="126.0" prefWidth="1087.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="2.0">
+               <children>
+                  <Button layoutX="625.0" layoutY="12.0" mnemonicParsing="false" onAction="#PressYES" prefHeight="107.0" prefWidth="188.0" text="Thanh Toán">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txttongtien" depthTest="ENABLE" layoutX="273.0" layoutY="12.0" prefHeight="108.0" prefWidth="346.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </TextField>
+                  <TextField depthTest="ENABLE" layoutX="10.0" layoutY="13.0" prefHeight="105.0" prefWidth="257.0" text="Tổng:">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="820.0" layoutY="11.0" mnemonicParsing="false" onAction="#PressNO" prefHeight="107.0" prefWidth="258.0" text="Hủy">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

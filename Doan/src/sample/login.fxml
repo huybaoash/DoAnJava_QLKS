@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="grpLogIn" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="312.0" prefWidth="550.0">
+         <children>
+            <Pane prefHeight="340.0" prefWidth="239.0">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="239.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/sample/h123.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="240.0" prefHeight="340.0" prefWidth="310.0">
+               <children>
+                  <ImageView fitHeight="83.0" fitWidth="55.0" layoutX="137.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/sample/okhoa.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="11.0" layoutY="140.0" text="UserName">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="174.0" prefHeight="21.0" prefWidth="73.0" text="Password">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUser" layoutX="97.0" layoutY="136.0" prefHeight="25.0" prefWidth="180.0" />
+                  <PasswordField fx:id="txtPass" layoutX="97.0" layoutY="172.0" prefHeight="25.0" prefWidth="180.0" />
+                  <Button layoutX="17.0" layoutY="233.0" mnemonicParsing="false" onAction="#PressOnLogin" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #E96151;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="159.0" layoutY="233.0" mnemonicParsing="false" onAction="#PressEsc" onMouseClicked="#PressEsc" prefHeight="31.0" prefWidth="137.0" style="-fx-background-color: #E96151;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Hyperlink layoutX="19.0" layoutY="276.0" onAction="#PressForgot" text="Forgot password">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

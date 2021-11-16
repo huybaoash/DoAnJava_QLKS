@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="1.7976931348623157E308" prefHeight="750.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.QL_NV">
+   <children>
+      <AnchorPane layoutX="276.4000000000001" layoutY="51.0" prefHeight="204.0" prefWidth="1042.0" AnchorPane.bottomAnchor="495.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <Label layoutX="783.0" layoutY="77.0" text="Chức vụ:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="30.0" text="Mã Nhân viên:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="419.0" layoutY="33.0" text="Ngày Sinh:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="442.0" layoutY="124.0" text="CMND:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="123.0" text="SĐT:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="749.0" layoutY="33.0" text="Lương cơ bản:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="162.0" text="Trạng Thái:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtID_NV" disable="true" editable="false" layoutX="161.0" layoutY="26.0" />
+            <TextField fx:id="txtName_NV" layoutX="161.0" layoutY="73.0" />
+            <TextField fx:id="txtPhoneNumber" layoutX="161.0" layoutY="120.0" onKeyTyped="#KeyNumber" prefHeight="26.0" prefWidth="149.0" />
+            <RadioButton fx:id="rbWorking" layoutX="293.0" layoutY="162.0" mnemonicParsing="false" onAction="#PressWorking" selected="true" text="Đang hoạt động" />
+            <RadioButton fx:id="rbStopped" layoutX="159.0" layoutY="163.0" mnemonicParsing="false" onAction="#PressStoped" text="Ngưng hoạt động" />
+            <DatePicker fx:id="dtpWasBorn_NV" layoutX="512.0" layoutY="31.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextField fx:id="txtEmail" layoutX="513.0" layoutY="75.0" />
+            <TextField fx:id="txtCMND_NV" layoutX="512.0" layoutY="121.0" onKeyTyped="#KeyNumber" prefHeight="26.0" prefWidth="149.0" />
+            <TextField fx:id="txtSalary_NV" layoutX="863.0" layoutY="30.0" onKeyTyped="#KeyNumber" prefHeight="26.0" prefWidth="149.0" />
+            <ComboBox fx:id="cbxCV" layoutX="865.0" layoutY="73.0" prefWidth="150.0" />
+            <ComboBox fx:id="cbxCLV" layoutX="865.0" layoutY="115.0" prefWidth="150.0" />
+            <Label layoutX="40.0" layoutY="77.0" text=" Tên Nhân viên:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="760.0" layoutY="117.0" text="Ca làm việc:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="451.0" layoutY="76.0" text="Email:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="779.0" layoutY="155.0" text="Giới tính:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbNam" layoutX="865.0" layoutY="157.0" mnemonicParsing="false" onAction="#PressNam" text="Nam" />
+            <RadioButton fx:id="rbNu" layoutX="927.0" layoutY="157.0" mnemonicParsing="false" onAction="#PressNu" selected="true" text="Nữ" />
+            <Button layoutX="382.0" layoutY="191.0" mnemonicParsing="false" onAction="#PressAdd" prefHeight="38.0" prefWidth="118.0" text="Thêm" AnchorPane.bottomAnchor="0.5999999999999943" />
+            <Button layoutX="543.0" layoutY="191.0" mnemonicParsing="false" onAction="#PressEdit" prefHeight="37.0" prefWidth="118.0" text="Sửa" AnchorPane.bottomAnchor="1.4000000000000057" />
+            <Button layoutX="701.0" layoutY="190.0" mnemonicParsing="false" onAction="#PressClear" prefHeight="38.0" prefWidth="118.0" text="Làm mới" AnchorPane.bottomAnchor="1.6000000000000014" />
+         </children>
+      </AnchorPane>
+      <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="TOP_CENTER" prefHeight="46.0" prefWidth="1320.0" style="-fx-background-color: #e96151;" text="Quản Lý Nhân Viên" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="284.0" prefWidth="1522.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane prefWidth="1320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <TableView fx:id="tblNV" onMouseClicked="#ShowInfoBacktoText" prefHeight="452.0" prefWidth="1320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="Index_table" prefWidth="40.0" text="STT" />
+                      <TableColumn fx:id="IDtable" prefWidth="60.0" text="Mã NV" />
+                        <TableColumn fx:id="NameNVtable" prefWidth="125.0" text="Tên NV" />
+                        <TableColumn fx:id="WasBorn_table" prefWidth="86.0" text="Ngày sinh" />
+                        <TableColumn fx:id="GioiTinh_table" prefWidth="76.0" text="Giới tính" />
+                        <TableColumn fx:id="CMND_table" prefWidth="109.0" text="CMND" />
+                        <TableColumn fx:id="SDT_table" minWidth="3.20001220703125" prefWidth="96.0" text="SDT" />
+                        <TableColumn fx:id="Email_table" minWidth="3.20001220703125" prefWidth="127.0" text="Email" />
+                        <TableColumn fx:id="Role_table" minWidth="3.20001220703125" prefWidth="95.0" text="Chức vụ" />
+                        <TableColumn fx:id="Salary_table" prefWidth="121.0" text="Lương" />
+                        <TableColumn fx:id="Join_table" prefWidth="116.0" text="Ngày Gia Nhập" />
+                        <TableColumn fx:id="TenCLV_table" prefWidth="86.0" text="Ca làm việc" />
+                        <TableColumn fx:id="Status_table" prefWidth="130.0" text="Trạng Thái" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtSearch" layoutX="16.0" layoutY="268.0" onKeyTyped="#SearchNV" prefHeight="25.0" prefWidth="186.0" promptText="Search" AnchorPane.bottomAnchor="456.4" AnchorPane.leftAnchor="16.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <AnchorPane layoutX="16.0" layoutY="47.0" prefHeight="150.0" prefWidth="100.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <ImageView fx:id="imgNV" fitHeight="204.0" fitWidth="254.0" layoutX="4.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="-3.5999999999999943" AnchorPane.topAnchor="7.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

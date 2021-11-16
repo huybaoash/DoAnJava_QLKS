@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://D:/java_APP/javafx-sdk-11.0.2/lib" />
+      <root url="jar://D:/java_APP/sqljdbc_9.2/enu/mssql-jdbc-9.2.1.jre11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/java_APP/javafx-sdk-11.0.2/lib" />
+    </SOURCES>
+    <jarDirectory url="file://D:/java_APP/javafx-sdk-11.0.2/lib" recursive="false" />
+    <jarDirectory url="file://D:/java_APP/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
